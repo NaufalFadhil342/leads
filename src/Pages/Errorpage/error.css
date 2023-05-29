@@ -1,0 +1,19 @@
+.error {
+  width: 100%;
+  height: auto;
+  margin: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.error h1 {
+  font-size: 3em;
+  color: #160d3a;
+}
+
+.error .button {
+  width: fit-content;
+  padding: 0 1rem;
+}

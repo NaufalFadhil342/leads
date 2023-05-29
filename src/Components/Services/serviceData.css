@@ -1,0 +1,193 @@
+/* products */
+
+.productMarket,
+.manageContent {
+  background-color: #6e85b7;
+  padding: 2.5rem 0;
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.productMarket h3,
+.manageContent h3 {
+  font-size: 2em;
+  color: white;
+}
+
+.productMarket .image,
+.branding .image,
+.website .image,
+.manageContent .image {
+  width: 100%;
+  height: 17rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.productMarket .categories,
+.manageContent .categories {
+  width: 100%;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.productMarket .categories .analyst,
+.productMarket .categories .evaluate,
+.manageContent .categories .organize,
+.manageContent .categories .keyword {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 1rem;
+}
+
+.productMarket .categories .analyst div,
+.productMarket .categories .evaluate div,
+.manageContent .categories .organize,
+.manageContent .categories .keyword {
+  font-weight: bold;
+}
+
+.productMarket .categories .analyst p,
+.productMarket .categories .evaluate p,
+.manageContent .categories .organize p,
+.manageContent .categories .keyword p {
+  font-weight: normal;
+}
+
+.productMarket a,
+.manageContent a {
+  width: fit-content;
+  padding: 1rem;
+  background-color: white;
+  color: #6e85b7;
+  text-decoration: none;
+}
+
+.productMarket a:hover,
+.manageContent a:hover {
+  color: white;
+  background-color: #375fb6;
+  transition: all 0.3s ease;
+}
+
+/* branding, website */
+
+.branding,
+.website {
+  background-color: rgb(196, 215, 224, 0.3);
+  padding: 2.5rem 0;
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.branding h3,
+.website h3 {
+  font-size: 2em;
+  color: #6e85b7;
+}
+
+.branding .categories,
+.website .categories {
+  width: 100%;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.branding .categories .establish,
+.branding .categories .explore,
+.website .categories .mobile,
+.website .categories .web {
+  display: flex;
+  flex-direction: column;
+  color: #6e85b7;
+  gap: 1rem;
+}
+
+.branding .categories .establish div,
+.branding .categories .explore div,
+.website .categories .mobile div,
+.website .categories .web div {
+  font-weight: bold;
+}
+
+.branding a,
+.website a {
+  padding: 1rem;
+  width: fit-content;
+  background-color: #6e85b7;
+  color: white;
+  text-decoration: none;
+}
+
+.branding a:hover,
+.website a:hover {
+  background-color: #375fb6;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .productMarket,
+  .manageContent,
+  .branding,
+  .website {
+    padding-left: 0;
+  }
+
+  .productMarket h3,
+  .manageContent h3,
+  .branding h3,
+  .website h3 {
+    text-align: center;
+  }
+
+  .productMarket .categories,
+  .manageContent .categories,
+  .branding .categories,
+  .website .categories {
+    padding: 0 5%;
+  }
+
+  .productMarket .link,
+  .manageContent .link,
+  .branding .link,
+  .website .link {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .productMarket h3,
+  .manageContent h3,
+  .branding h3,
+  .website h3 {
+    padding: 0 10%;
+  }
+
+  .productMarket .categories,
+  .manageContent .categories,
+  .branding .categories,
+  .website .categories {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .productMarket .link,
+  .manageContent .link,
+  .branding .link,
+  .website .link {
+    padding: 0 10%;
+  }
+}

@@ -1,0 +1,14 @@
+button {
+  width: auto;
+  height: 3rem;
+  font-size: inherit;
+  border: none;
+  background-color: #6e85b7;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #375fb6;
+  transition: all 0.3s ease;
+}

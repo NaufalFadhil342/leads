@@ -1,0 +1,403 @@
+.servicePage {
+  width: 100%;
+  height: auto;
+}
+
+/* head */
+
+.servicePage .head {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: rgb(196, 215, 224, 0.3);
+}
+
+.servicePage .head .background {
+  flex: 50%;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.servicePage .head .background .background-content {
+  display: none;
+}
+
+.servicePage .head .services {
+  flex: 50%;
+  padding: 4rem 10% 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.servicePage .head .services .tagline,
+.servicePage .product .header .tagline,
+.servicePage .benefit .advantage .header .tagline,
+.servicePage .accredite .header .tagline {
+  color: #6e85b7;
+  letter-spacing: 2px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.servicePage .head .services h1,
+.servicePage .product .header h1,
+.servicePage .benefit .advantage .header h1,
+.servicePage .accredite .header h1 {
+  font-size: 3em;
+  color: #160d3a;
+}
+
+.servicePage .head .services a {
+  width: fit-content;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  font-size: inherit;
+  text-decoration: none;
+  border: none;
+  background-color: #6e85b7;
+  color: white;
+}
+
+.servicePage .head .services a:hover {
+  background-color: #4a6cb6;
+  transition: all 0.3s ease;
+}
+
+/* product */
+
+.servicePage .product {
+  width: 100%;
+  height: auto;
+  margin-top: 8rem;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.servicePage .product .header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.servicePage .product .header .line,
+.servicePage .benefit .advantage .header .line,
+.servicePage .accredite .header .line {
+  width: 5rem;
+  height: 1.25px;
+  background-color: #6e85b7;
+  margin-top: 5px;
+}
+
+.servicePage .product .body {
+  width: 100%;
+  height: auto;
+}
+
+.servicePage .product .body .content {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* benefit */
+
+.servicePage .benefit {
+  width: 100%;
+  height: auto;
+  margin-top: 8rem;
+  padding: 0 10%;
+  display: flex;
+}
+
+.servicePage .benefit .advantage,
+.servicePage .benefit .image {
+  flex: 50%;
+}
+
+.servicePage .benefit .advantage {
+  width: 100%;
+  height: auto;
+  padding: 0 3rem 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.servicePage .benefit .advantage .header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.servicePage .benefit .advantage .header p {
+  margin-top: 1rem;
+  color: #6e85b7;
+  line-height: 1.5em;
+}
+
+.servicePage .benefit .advantage .body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 2rem;
+}
+
+.servicePage .benefit .advantage .body .bonus {
+  color: #6e85b7;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.servicePage .benefit .advantage .body .bonus i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6e85b7;
+}
+
+.servicePage .benefit .advantage .body .bonus i svg {
+  color: white;
+  font-size: 25px;
+}
+
+.servicePage .benefit .advantage .body .bonus .label {
+  font-weight: bold;
+}
+
+.servicePage .benefit .image div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* accredite */
+
+.servicePage .accredite {
+  width: 100%;
+  height: auto;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.servicePage .accredite .header {
+  width: 100%;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.servicePage .accredite .body {
+  width: 100%;
+  height: auto;
+  background-color: rgb(196, 215, 224, 0.3);
+  padding: 3rem 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicePage .accredite .body div {
+  padding: 0 3rem;
+  border-right: 1.5px solid #6e85b7;
+  color: #6e85b7;
+  text-align: center;
+}
+
+.servicePage .accredite .body div:nth-child(4) {
+  border-right: none;
+}
+
+.servicePage .accredite .body div h1 {
+  width: fit-content;
+  margin: auto;
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .servicePage .head .background {
+    flex: 100%;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .servicePage .head .services {
+    flex: 0%;
+    padding: 0;
+    display: none;
+  }
+
+  .servicePage .head .background .background-content {
+    width: 100%;
+    height: 100%;
+    padding: 0 10%;
+    background-color: rgba(20, 20, 20, 0.4);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .servicePage .head .background .background-content .tagline {
+    letter-spacing: 2px;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  .servicePage .head .background .background-content h1 {
+    margin-top: -0.5rem;
+    font-size: 3em;
+  }
+
+  .servicePage .head .background .background-content a {
+    width: fit-content;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    background-color: white;
+    color: #6e85b7;
+  }
+
+  .servicePage .head .background .background-content a:hover {
+    background-color: #375fb6;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .servicePage .product {
+    padding: 0;
+  }
+
+  .servicePage .product .header {
+    padding: 0 10%;
+  }
+
+  .servicePage .benefit {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .servicePage .benefit .image div {
+    width: 100%;
+    height: 25rem;
+  }
+
+  .servicePage .accredite .body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .servicePage .accredite .body div:nth-child(3) {
+    border: none;
+  }
+
+  .servicePage .accredite .body div:nth-child(4) {
+    margin-top: 2rem;
+    padding: 3rem 3rem;
+    border: none;
+    border-top: 1.5px solid #6e85b7;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .servicePage .head .background .background-content h1 {
+    font-size: 2.25em;
+  }
+
+  .servicePage .product {
+    padding: 0 10%;
+  }
+
+  .servicePage .product .header {
+    padding: 0;
+  }
+
+  .servicePage .product .header h1 {
+    font-size: 2.25em;
+  }
+
+  .servicePage .product .body .content {
+    grid-template-columns: 1fr;
+  }
+
+  .servicePage .benefit {
+    padding: 0 0;
+  }
+
+  .servicePage .benefit .advantage {
+    padding: 0 10%;
+  }
+
+  .servicePage .benefit .advantage .header h1,
+  .servicePage .accredite .header h1 {
+    font-size: 2.25em;
+  }
+
+  .servicePage .accredite {
+    margin-top: 6rem;
+  }
+
+  .servicePage .accredite .body div {
+    padding: 3rem 3rem;
+    border: none;
+    border-bottom: none;
+  }
+
+  .servicePage .accredite .body div:nth-child(2) {
+    border: none;
+    border-right: none;
+  }
+
+  .servicePage .accredite .body div:nth-child(3) {
+    padding: 3rem 3rem;
+    border-top: 1.5px solid #6e85b7;
+  }
+
+  .servicePage .accredite .body div:nth-child(4) {
+    margin-top: 0;
+  }
+
+  .servicePage .accredite .body div h1 {
+    font-size: 2.25em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .servicePage .product {
+    padding: 0 0;
+  }
+
+  .servicePage .product .header {
+    padding: 0 10%;
+  }
+
+  .servicePage .benefit .advantage .body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .servicePage .accredite .body div {
+    border-bottom: 1.5px solid #6e85b7;
+  }
+}

@@ -1,0 +1,99 @@
+form {
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form .header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+  gap: 1rem;
+}
+
+form .header h1 {
+  font-size: 2em !important;
+  color: #6e85b7 !important;
+}
+
+form .header .line {
+  width: 5rem;
+  height: 1.25px;
+  background-color: #6e85b7;
+  margin-top: -5px !important;
+}
+
+form .formBody {
+  width: 100%;
+  height: auto;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form .formBody .name,
+form .formBody .email,
+form .formBody .comment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form .formBody .name label,
+form .formBody .email label,
+form .formBody .comment label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #6e85b7;
+}
+
+form .formBody .name input,
+form .formBody .email input {
+  height: 2rem;
+  padding-left: 0.5rem;
+  font-size: inherit;
+  color: #6e85b7;
+  outline-color: #6e85b7;
+}
+
+form .formBody .comment textarea {
+  height: 10rem;
+  outline-color: #6e85b7;
+  color: #6e85b7;
+  padding: 0.5rem 0 0 0.5rem;
+}
+
+form .formBody .name p,
+form .formBody .email p,
+form .formBody .comment p {
+  color: #ff3737;
+  font-size: 15px;
+}
+
+form .formBody .submit {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+form .formBody .submit input {
+  width: 100%;
+  height: 3rem;
+  font-size: inherit;
+  border: none;
+  background-color: #6e85b7;
+  color: white;
+}
+
+form .formBody .submit input:hover {
+  cursor: pointer;
+  background-color: #375fb6;
+  transition: all 0.3s ease;
+}
